@@ -13,7 +13,7 @@ Create newsarticles and store them in .txt files
 The admin can edit and delete messages
 
 How to use?
-1. store all files in a directory 
+1. open the .zip and store all files in a directory 
 2. open **index.php, slider.php and admin.php**. Inbetween the head tags look for this line:  
 ```
  <!-- font awesome kit -->
