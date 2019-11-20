@@ -1,5 +1,5 @@
 # newsarticles
-A flat file news articles creator written in php
+**A flat file news articles creator written in php**<br />
 <br />
 It comes with a slider for the newsarticles<br />
 Build with TinyMCE editor<br />
