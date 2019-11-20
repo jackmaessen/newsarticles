@@ -45,3 +45,4 @@ Admin: http://newsarticles1.webprofis.nl/admin.php<br />
 Index: http://newsarticles1.webprofis.nl/index.php<br />
 Slider: http://newsarticles1.webprofis.nl/slider.php
 
+Feel free to contact me for questions: jcmg.maessen@gmail.com
