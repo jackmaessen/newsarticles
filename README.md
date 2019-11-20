@@ -26,10 +26,11 @@ Replace the line in the head tag with your own kit
 
 Replace the api key with your own. Get the key here: https://www.tiny.cloud/auth/signup/
 4. open settings.php and set the variables to your own needs
-5. browse to yoursite.com/admin.php and start writing your first article!
+
+5. browse to admin.php and start writing your first article!
 
 For visitors: 
-They use to browse to : yourstie.com/index.php or yoursite.com/slider.php
+They use to browse to : index.php or slider.php
 
 NB: admin.php is NOT protected with a login. You really should do that if you want to use it in production
 
