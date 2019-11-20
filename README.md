@@ -1,2 +1,36 @@
 # newsarticles
-Flat file newsarticles creator
+A flat file news articles creator written in php
+It comes with a slider for the newsarticles
+Build with TinyMCE editor
+Bootstrap grid
+Font-awesome icons
+No database required!
+
+Create newsarticles and store them in .txt files
+The admin can edit and delete messages
+
+How to use?
+1. store all files in a directory 
+2. open index.php, slider.php and admin.php. Inbetween the head tags look for this line:  
+
+<!-- font awesome kit -->
+<script src="https://kit.fontawesome.com/*your own kit goes here*.js" crossorigin="anonymous"></script>
+
+Get your won kit here: https://fontawesome.com/start
+Replace the line in the head tag with your own kit
+
+3. open admin.php, look for this line in the head tags:
+
+<!-- API key for TinyMCE -->
+<script src="https://cdn.tiny.cloud/1/*your own key goes here*/tinymce/5/tinymce.min.js"></script> 
+
+Replace the api key with your own. Get the key here: https://www.tiny.cloud/auth/signup/
+4. open settings.php and set the variables to your own needs
+5. browse to yoursite.com/admin.php and start writing your first article!
+
+For visitors: 
+They use to browse to : yourstie.com/index.php or yoursite.com/slider.php
+
+NB: admin.php is NOT protected with a login. You really should do that if you want to use it in production
+
+
