@@ -17,7 +17,7 @@ How to use?
 <script src="https://kit.fontawesome.com/*your own kit goes here*.js" crossorigin="anonymous"></script>
 ```
 
-Get your won kit here: https://fontawesome.com/start
+Get your own kit here: https://fontawesome.com/start
 Replace the line in the head tag with your own kit
 
 3. open **admin.php**, look for this line in the head tags:
