@@ -25,6 +25,7 @@ Replace the line in the head tag with your own kit
 <script src="https://cdn.tiny.cloud/1/*your own key goes here*/tinymce/5/tinymce.min.js"></script> 
 
 Replace the api key with your own. Get the key here: https://www.tiny.cloud/auth/signup/
+
 4. open settings.php and set the variables to your own needs
 
 5. browse to admin.php and start writing your first article!
