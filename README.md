@@ -5,6 +5,8 @@ It comes with a slider for the newsarticles<br />
 Build with TinyMCE editor<br />
 Bootstrap grid<br />
 Font-awesome icons<br />
+Search function<br />
+Last x messages<br />
 No database required!
 
 Create newsarticles and store them in .txt files
