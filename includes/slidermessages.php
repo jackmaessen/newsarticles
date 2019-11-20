@@ -17,7 +17,7 @@ if (isset($newslist)) {
 	// sort array
 	rsort($newslist);
 	
-	$pagemsgs = array_slice($newslist, $offset, $articlesperpage);
+	$pagemsgs = array_slice($newslist, $offset, $articles_slider); // $articles_slider determined in settings
 	
 		foreach($pagemsgs as $file){
 					
