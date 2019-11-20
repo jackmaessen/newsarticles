@@ -1,0 +1,29 @@
+.icon-button {
+	margin-top: 15px;
+	background: transparent;
+	border: none;
+	font-size: 18px;
+}
+.newsmessages {
+	margin-bottom: 100px;
+}
+
+.news-date,
+.news-author {
+	padding: 20px 0 0 0;
+}
+i.fas.fa-calendar-alt,
+i.fas.fa-user
+ {
+	margin-right: 5px;
+}
+.news-date {
+	margin-right: 10px;
+}
+
+li.page-item.current a {
+    background-color: #eee; /* pagination */
+}
+.btn-primary {
+	width: 100%;
+}
