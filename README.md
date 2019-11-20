@@ -37,5 +37,9 @@ For visitors:
 They use to browse to : **index.php** or **slider.php**
 
 **NB: admin.php is NOT protected with a login. You really should do that if you want to use it in production**
-
+<br /><br />
+**DEMO:** <br />
+Admin: http://newsarticles1.webprofis.nl/admin.php<br />
+Index: http://newsarticles1.webprofis.nl/index.php<br />
+Slider: http://newsarticles1.webprofis.nl/slider.php
 
