@@ -12,17 +12,19 @@ The admin can edit and delete messages
 How to use?
 1. store all files in a directory 
 2. open index.php, slider.php and admin.php. Inbetween the head tags look for this line:  
-
- font awesome kit 
+```
+ <!-- font awesome kit -->
 <script src="https://kit.fontawesome.com/*your own kit goes here*.js" crossorigin="anonymous"></script>
+```
 
 Get your won kit here: https://fontawesome.com/start
 Replace the line in the head tag with your own kit
 
 3. open admin.php, look for this line in the head tags:
-
- API key for TinyMCE 
+```
+ <!-- API key for TinyMCE -->
 <script src="https://cdn.tiny.cloud/1/*your own key goes here*/tinymce/5/tinymce.min.js"></script> 
+```
 
 Replace the api key with your own. Get the key here: https://www.tiny.cloud/auth/signup/
 
