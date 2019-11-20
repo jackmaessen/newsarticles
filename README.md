@@ -1,15 +1,11 @@
 # newsarticles
 A flat file news articles creator written in php
 
-It comes with a slider for the newsarticles
-
-Build with TinyMCE editor
-
-Bootstrap grid
-
-Font-awesome icons
-
-No database required!
+-It comes with a slider for the newsarticles
+-Build with TinyMCE editor
+-Bootstrap grid
+-Font-awesome icons
+-No database required!
 
 Create newsarticles and store them in .txt files
 The admin can edit and delete messages
