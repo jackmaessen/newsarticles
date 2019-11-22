@@ -257,52 +257,55 @@ if (isset($newslist)) {
 
 
 	/******  build the pagination links ******/
-	?>
+	// Do not show navigation when search request of single page request
+	if($_GET['news_search'] == NULL && $_GET['page'] == NULL) {
+		?>
 
-	<ul class="pagination">
-	<?php
+		<ul class="pagination">
+		<?php
 
-	// if not on page 1, show back links
-	if ($currentpage > 1) {
-		// show << link to go back to page 1
-		echo "<li class=\"page-item\"><a class=\"page-link\" href='{$_SERVER['PHP_SELF']}?currentpage=1'><i class=\"fas fa-step-backward\"></i></a></li> ";
-		// get previous page num
-		$prevpage = $currentpage - 1;
-		// show < link to go back to 1 page
-		echo "<li class=\"page-item\"><a class=\"page-link\" href='{$_SERVER['PHP_SELF']}?currentpage=$prevpage'><i class=\"fas fa-backward\"></i></a></li> ";
-	} // end if
+		// if not on page 1, show back links
+		if ($currentpage > 1) {
+			// show << link to go back to page 1
+			echo "<li class=\"page-item\"><a class=\"page-link\" href='{$_SERVER['PHP_SELF']}?currentpage=1'><i class=\"fas fa-step-backward\"></i></a></li> ";
+			// get previous page num
+			$prevpage = $currentpage - 1;
+			// show < link to go back to 1 page
+			echo "<li class=\"page-item\"><a class=\"page-link\" href='{$_SERVER['PHP_SELF']}?currentpage=$prevpage'><i class=\"fas fa-backward\"></i></a></li> ";
+		} // end if
 
-	// loop to show links to pagination_range of pages around current page
-	for($x = ($currentpage - $pagination_range); $x < (($currentpage + $pagination_range) + 1); $x++){
-		// if it's a valid page number...
-		if (($x > 0) && ($x <= $totalpages)) {
-			// if we're on current page...
-			if ($x == $currentpage) {
-				// 'highlight' it but don't make a link
-				echo "<li class=\"page-item current\"><a class=\"current\">$x</a></li>";
-				// if not current page...
-			} else {
-				// make it a link
-				echo "<li class=\"page-item\"><a class=\"page-link\" href='{$_SERVER['PHP_SELF']}?currentpage=$x'>$x</a></li> ";
-			} // end else
-		} // end if 
-	} // end for
-					 
-	// if not on last page, show forward and last page links        
-	if ($currentpage != $totalpages) {
-		// get next page
-		$nextpage = $currentpage + 1;
-		// echo forward link for next page 
-		echo "<li class=\"page-item\"><a class=\"page-link\" href='{$_SERVER['PHP_SELF']}?currentpage=$nextpage'><i class=\"fas fa-forward\"></i></a></li>";
-		// echo forward link for lastpage
-		echo "<li class=\"page-item\"><a class=\"page-link\" href='{$_SERVER['PHP_SELF']}?currentpage=$totalpages'><i class=\"fas fa-step-forward\"></i></a></li>";
-	} // end if
+		// loop to show links to pagination_range of pages around current page
+		for($x = ($currentpage - $pagination_range); $x < (($currentpage + $pagination_range) + 1); $x++){
+			// if it's a valid page number...
+			if (($x > 0) && ($x <= $totalpages)) {
+				// if we're on current page...
+				if ($x == $currentpage) {
+					// 'highlight' it but don't make a link
+					echo "<li class=\"page-item current\"><a class=\"current\">$x</a></li>";
+					// if not current page...
+				} else {
+					// make it a link
+					echo "<li class=\"page-item\"><a class=\"page-link\" href='{$_SERVER['PHP_SELF']}?currentpage=$x'>$x</a></li> ";
+				} // end else
+			} // end if 
+		} // end for
 
-	?>
-	</ul>
-	<?php
+		// if not on last page, show forward and last page links        
+		if ($currentpage != $totalpages) {
+			// get next page
+			$nextpage = $currentpage + 1;
+			// echo forward link for next page 
+			echo "<li class=\"page-item\"><a class=\"page-link\" href='{$_SERVER['PHP_SELF']}?currentpage=$nextpage'><i class=\"fas fa-forward\"></i></a></li>";
+			// echo forward link for lastpage
+			echo "<li class=\"page-item\"><a class=\"page-link\" href='{$_SERVER['PHP_SELF']}?currentpage=$totalpages'><i class=\"fas fa-step-forward\"></i></a></li>";
+		} // end if
 
-/****** end build pagination links ******/
+		?>
+		</ul>
+		<?php
+	}
+
+	/****** end build pagination links ******/
 } 
 else {
 	echo '<div>No messages yet</div>';
