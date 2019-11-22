@@ -27,7 +27,8 @@ if (isset($news_search)) {
 	//show results:
 	if($matches != NULL) { // found a match 
 		?>
-		<a class="pull-right"href="<?php echo $_SERVER["PHP_SELF"]; ?>">Back to all articles</a>
+		<a class="pull-left" href="<?php echo $_SERVER["PHP_SELF"]; ?>">Back to all articles</a>
+		<br /><br />
 		<div class="results">Search results for: <b><?php echo $news_search; ?></b></div>
 		<br />
 		<?php
