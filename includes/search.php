@@ -68,6 +68,8 @@ if (isset($news_search)) {
 	}
 	else {
 		?>
+			<a class="pull-left"href="<?php echo $_SERVER["PHP_SELF"]; ?>">Back to all articles</a>
+			<br /><br />
 			<div class="noresults">No matches found...</div>
 			<div class="clearfix"></div>
 		<?php
