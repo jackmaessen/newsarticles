@@ -1,4 +1,4 @@
-# simple newsarticles
+# Simple News Articles PHP flat file database
 **A flat file news articles creator written in php**<br />
 <br />
 It comes with a slider for the newsarticles<br />
