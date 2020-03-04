@@ -1,0 +1,46 @@
+
+.newsmessages {
+	margin-bottom: 100px;
+}
+.card,
+.form, 
+.pagination,
+.page-header {
+	margin-top: 40px;
+}
+
+i.fas.fa-calendar-alt,
+i.fas.fa-user,
+i.fas.fa-tag,
+i.fas.fa-eye,
+.delete,
+.edit
+ {
+	margin-right: 5px;
+}
+.news-date,
+.news-author {
+	margin-right: 10px;
+}
+.news-counter {
+	margin-left: 10px;
+}
+
+li.page-item.current a {
+    background-color: #eee; /* pagination */
+}
+.btn-primary {
+	width: 100%;
+}
+.search-form button {
+    background: transparent;
+    border: none;
+    float: right;
+    margin-top: -30px;
+    margin-right: 15px;
+    position: relative;
+    z-index: 2;
+}
+
+	
+	
